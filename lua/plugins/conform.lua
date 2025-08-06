@@ -4,7 +4,7 @@ return {
   cmd = { 'ConformInfo' },
   opts = {
     formatters_by_ft = {
-      python = { "ruff", "black" },
+      python = { "ruff", "black", "stylua", "luacheck" },
     },
     format_on_save = {
       timeout_ms = 1000,

@@ -1,9 +1,7 @@
-
-
-
 return {
   "neovim/nvim-lspconfig",
   config = function()
+    -- Python
     vim.lsp.config['pyright'] = {
       cmd = { "pyright-langserver", "--stdio" },
       filetypes = { "python" },
@@ -17,6 +15,13 @@ return {
           }
         }
       }
+    }
+
+    -- Lua
+    vim.lsp.config['lua_ls'] = {
+        cmd = { "lua-language-server" },
+        filetypes = { "lua" },
+        root_markers = { ".luarc.json", ".luarc.jsonc", ".luacheckrc", ".stylua.toml", "stylua.toml", "selene.toml", "selene.yml", ".git" },
     }
   end,
   vim.lsp.enable("pyright")
