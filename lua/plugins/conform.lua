@@ -6,6 +6,9 @@ return {
 		formatters_by_ft = {
 			python = { "black" },
 			lua = { "stylua" },
+			html = { "prettier" },
+			css = { "prettier" },
+			javascript = { "prettier" },
 		},
 		format_on_save = {
 			timeout_ms = 1000,
