@@ -1,2 +1,5 @@
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("n", "<leader>e", ":Ex<CR>")
+vim.keymap.set("n", "<leader>pd", function()
+    vim.diagnostic.open_float()
+end)
