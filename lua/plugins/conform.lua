@@ -9,6 +9,7 @@ return {
             html = { "prettier" },
             css = { "prettier" },
             javascript = { "prettier" },
+            c = { "clang-format" },
         },
         formatters = {
             black = {},
