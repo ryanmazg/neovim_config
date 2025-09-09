@@ -19,6 +19,13 @@ return {
             prettier = {
                 prepend_args = { "--tab-width", "4", "--use-tabs", "false" },
             },
+            ["clang-format"] = {
+                args = {
+                    "--style={BasedOnStyle: LLVM, IndentWidth: 4, UseTab: Never}",
+                    "--assume-filename",
+                    "$FILENAME",
+                },
+            },
         },
         format_on_save = {
             timeout_ms = 1000,
