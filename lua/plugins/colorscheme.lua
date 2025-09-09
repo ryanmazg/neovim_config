@@ -1,10 +1,10 @@
 return {
     {
-        "cpea2506/one_monokai.nvim",
+        "dasupradyumna/midnight.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            require("one_monokai").setup({})
+            require("midnight").setup({})
 
             -- require("one_monokai").load()
         end,
