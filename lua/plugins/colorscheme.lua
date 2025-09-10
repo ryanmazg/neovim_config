@@ -1,12 +1,10 @@
 return {
     {
-        "dasupradyumna/midnight.nvim",
+        "olimorris/onedarkpro.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            require("midnight").setup({})
-
-            -- require("one_monokai").load()
+            vim.cmd("colorscheme onedark_dark")
         end,
     },
 }
